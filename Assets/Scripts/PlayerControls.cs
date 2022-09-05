@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    [SerializeField] float controlSpeed = 30f;
-    [SerializeField] float xRange = 10f;
-    [SerializeField] float yRange = 7f;
+    [SerializeField] private float controlSpeed = 30f;
+    [SerializeField] private float xRange = 10f;
+    [SerializeField] private float yRange = 7f;
 
-    [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -15f;
+    [SerializeField] private float positionPitchFactor = -2f;
+    [SerializeField] private float controlPitchFactor = -15f;
 
-    [SerializeField] float positionYawFactor = 2.25f;
-    [SerializeField] float controlYawFactor = 0f;
+    [SerializeField] private float positionYawFactor = 2.25f;
+    [SerializeField] private float controlYawFactor = 0f;
 
-    [SerializeField] float positionRollFactor = 0f;
-    [SerializeField] float controlRollFactor = -25f;
+    [SerializeField] private float positionRollFactor = 0f;
+    [SerializeField] private float controlRollFactor = -25f;
 
     [SerializeField] GameObject[] lasers;
 
