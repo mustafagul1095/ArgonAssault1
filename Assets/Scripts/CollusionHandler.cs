@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CollusionHandler : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem crashVFX;
+    [SerializeField] private GameObject crashVFX;
     private void OnTriggerEnter(Collider other)
     {
         StartCrashSequence();
@@ -14,7 +14,8 @@ public class CollusionHandler : MonoBehaviour
 
     private void StartCrashSequence()
     {
-        crashVFX.Play();
+        //crashVFX.Play();
+        Instantiate(crashVFX, transform.position, Quaternion.identity);
         GetComponent<PlayerControls>().enabled = false;
         Invoke(nameof(ReloadLevel), 1f);
     }

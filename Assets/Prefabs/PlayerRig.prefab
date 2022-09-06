@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6451504396193416337}
   - component: {fileID: 6451504396193416342}
   - component: {fileID: 6451504396193416343}
+  - component: {fileID: 4293360886610914692}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -84,6 +85,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6451504396193416340}
   m_Enabled: 1
+--- !u!114 &4293360886610914692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451504396193416340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 6451504396193416337}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &6451504397410346052
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,11 +418,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77da29788f3010e4396994ea52057980, type: 3}
---- !u!198 &8763899992261460721 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2312591318274358132, guid: 77da29788f3010e4396994ea52057980, type: 3}
-  m_PrefabInstance: {fileID: 6451504396725270917}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6878160335669561178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,4 +620,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2aba272f46f524bb2e50e17a593d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crashVFX: {fileID: 8763899992261460721}
+  crashVFX: {fileID: 8714244275622671896, guid: abf8d5b763621654486813c5c8af8234, type: 3}
